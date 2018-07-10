@@ -2,6 +2,8 @@ def alphabetize(arr)
   # code here
   alpha = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".split(//)
   arr.sort_by do |phrase|      
-    phrase.chars.map { |c| alpha.index(c)}
+    alpha.index(phrase[0])  
   end
+  
+  return arr
 end
